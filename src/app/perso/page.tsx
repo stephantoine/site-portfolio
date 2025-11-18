@@ -21,17 +21,29 @@ const Perso = () => {
             <section className='mb-16'>
                 <div className='flex w-full gap-8 flex-col items-center'>
                     <video controls width={800} height={450}>
-                        <source src="https://player.cloudinary.com/embed/?cloud_name=dzxlzl9ng&public_id=coucher_soleil_msmpjm&profile=cld-default" type="video/MP4" />
-                        Coucher de soleil
+                        <source 
+                            src="https://res.cloudinary.com/dzxlzl9ng/video/upload/f_auto,q_auto/coucher_soleil_msmpjm.mp4" 
+                            type="video/mp4" 
+                        />
+                        Votre navigateur ne supporte pas la lecture video.
                     </video>
+
                     <video controls width={800} height={450}>
-                        <source src="https://player.cloudinary.com/embed/?cloud_name=dzxlzl9ng&public_id=falaises_xxuteb&profile=cld-default" type="video/mov" />
+                        <source 
+                            src="https://res.cloudinary.com/dzxlzl9ng/video/upload/f_auto,q_auto/falaises_xxuteb.mp4" 
+                            type="video/mp4" 
+                        />
                         Falaises
                     </video>
+
                     <video controls width={800} height={450}>
-                        <source src="https://player.cloudinary.com/embed/?cloud_name=dzxlzl9ng&public_id=montagne_snizjs&profile=cld-default" type="video/mov" />
+                        <source 
+                            src="https://res.cloudinary.com/dzxlzl9ng/video/upload/f_auto,q_auto/montagne_snizjs.mp4" 
+                            type="video/mp4" 
+                        />
                         Montagnes
                     </video>
+
                 </div>
             </section>
 
