@@ -48,14 +48,21 @@ const Perso = () => {
             </section>
 
             <section>
-                <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4'>
-                    <Link className="flex gap-4 bg-gray-100 dark:bg-gray-800 dark:text-white py-2 px-2 text-primary rounded-xl justify-center shadow-md transition-colors hover:bg-gray-200 dark:hover:bg-gray-700" href="https://www.youtube.com/watch?v=UcGIwjoNQzY"> 
-                        <MountainSnowIcon></MountainSnowIcon>
-                        Vlog des Alpes
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <Link 
+                        href="https://www.youtube.com/watch?v=UcGIwjoNQzY"
+                        className="flex items-center justify-center gap-3 bg-gray-100 dark:bg-gray-800 text-primary dark:text-white py-3 px-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    > 
+                        <MountainSnowIcon className="w-6 h-6"/>
+                        <span className="font-medium text-lg">Vlog des Alpes</span>
                     </Link>
-                    <Link className="flex gap-4 bg-gray-100 dark:bg-gray-800 dark:text-white py-2 px-2 text-primary rounded-xl justify-center shadow-md transition-colors hover:bg-gray-200 dark:hover:bg-gray-700" href="https://youtu.be/mpmc1JH8vNs"> 
-                        <StarIcon></StarIcon>
-                        Montage année 2025
+
+                    <Link 
+                        href="https://youtu.be/mpmc1JH8vNs"
+                        className="flex items-center justify-center gap-3 bg-gray-100 dark:bg-gray-800 text-primary dark:text-white py-3 px-6 rounded-2xl shadow-lg transition-transform transform hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    > 
+                        <StarIcon className="w-6 h-6"/>
+                        <span className="font-medium text-lg">Montage année 2025</span>
                     </Link>
                 </div>
             </section>
