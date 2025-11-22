@@ -18,20 +18,20 @@ const Competences = () => {
     const [zoom, setZoom] = useState(false)
     const [offsetX, setOffsetX] = useState(0)
     const [offsetY, setOffsetY] = useState(0)
-    const containerRef = useRef<HTMLDivElement>(null)
-    const dragRef = useRef<{ active: boolean; startX: number; startY: number; originX: number; originY: number } | null>(null)
+    const containerRef = useRef<HTMLDivElement | null>(null)
+    const dragRef = useRef<{ active: boolean; pointerId: number; startX: number; startY: number; originX: number; originY: number } | null>(null)
     const [constraints, setConstraints] = useState({ left: 0, right: 0, top: 0, bottom: 0 })
 
     // Détection mobile
     useEffect(() => {
       const mq = window.matchMedia("(max-width: 639px)")
-      const handler = (e: MediaQueryListEvent | MediaQueryList) => setIsMobile(e.matches)
-      handler(mq)
+      const handler = (e: MediaQueryListEvent | MediaQueryList) => setIsMobile((e as any).matches)
+      handler(mq as any)
       if ("addEventListener" in mq) mq.addEventListener("change", handler as any)
-      else mq.addListener(handler)
+      else (mq as any).addListener(handler as any)
       return () => {
         if ("removeEventListener" in mq) mq.removeEventListener("change", handler as any)
-        else mq.removeListener(handler)
+        else (mq as any).removeListener(handler as any)
       }
     }, [])
 
