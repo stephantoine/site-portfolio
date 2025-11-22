@@ -135,7 +135,7 @@ const Competences = () => {
               }}
               className="w-full h-full"
             >
-              <img
+              <motion.img
                 src={imageUrl}
                 alt="Carte mentale compétences"
                 className="select-none max-w-none rotate-90 w-auto h-full sm:rotate-0 sm:w-full sm:h-auto"
