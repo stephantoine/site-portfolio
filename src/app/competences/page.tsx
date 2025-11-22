@@ -6,6 +6,13 @@ import { skills } from '@/contents/comp'
 import { Map } from "lucide-react";
 import Link from "next/link";
 
+interface Constraints {
+  left: number
+  right: number
+  top: number
+  bottom: number
+}
+
 const Competences = () => {
   const imageUrl = "/mind_map.png"
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -19,19 +26,46 @@ const Competences = () => {
     const [offsetX, setOffsetX] = useState(0)
     const [offsetY, setOffsetY] = useState(0)
     const containerRef = useRef<HTMLDivElement | null>(null)
-    const dragRef = useRef<{ active: boolean; pointerId: number; startX: number; startY: number; originX: number; originY: number } | null>(null)
-    const [constraints, setConstraints] = useState({ left: 0, right: 0, top: 0, bottom: 0 })
+    const dragRef = useRef<{
+      active: boolean
+      pointerId: number
+      startX: number
+      startY: number
+      originX: number
+      originY: number
+    } | null>(null)
+    const [constraints, setConstraints] = useState<Constraints>({
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0
+    })
 
     // Détection mobile
     useEffect(() => {
       const mq = window.matchMedia("(max-width: 639px)")
-      const handler = (e: MediaQueryListEvent | MediaQueryList) => setIsMobile((e as any).matches)
-      handler(mq as any)
-      if ("addEventListener" in mq) mq.addEventListener("change", handler as any)
-      else (mq as any).addListener(handler as any)
+
+      const handler = (e: MediaQueryListEvent) => {
+        setIsMobile(e.matches)
+      }
+
+      // Valeur initiale
+      setIsMobile(mq.matches)
+
+      if ("addEventListener" in mq) {
+        mq.addEventListener("change", handler)
+      } else {
+        // @ts-expect-error Safari fallback
+        mq.addListener(handler)
+      }
+
       return () => {
-        if ("removeEventListener" in mq) mq.removeEventListener("change", handler as any)
-        else (mq as any).removeListener(handler as any)
+        if ("removeEventListener" in mq) {
+          mq.removeEventListener("change", handler)
+        } else {
+          // @ts-expect-error Safari fallback
+          mq.removeListener(handler)
+        }
       }
     }, [])
 
@@ -40,7 +74,7 @@ const Competences = () => {
       if (isMobile) {
         try {
           const newWin = window.open(imageUrl, "_blank")
-          if (newWin) (newWin as any).opener = null
+          if (newWin) newWin.opener = null
         } catch {}
         togglePopup()
       }
@@ -103,7 +137,7 @@ const Competences = () => {
       try { e.currentTarget.releasePointerCapture(drag.pointerId) } catch {}
     }
 
-    const handleClickImage = () => setZoom(prev => prev ? false : true)
+    const handleClickImage = () => setZoom(prev => !prev)
 
     return (
       <div className="fixed inset-0 bg-black/60 z-40 flex items-center justify-center p-4">
