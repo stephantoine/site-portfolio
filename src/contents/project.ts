@@ -25,7 +25,7 @@ export const projects: Project[] = [
         title: 'Site de cuisine',
         handle: 'Site de cuisine',
         type: 'Personnel',
-        description: 'Projet en cours ! Site de cuisine responsif pour les recenser les recettes de ma mère. Recueil de ses besoins, maquettage, développement et production.',
+        description: 'Projet en cours ! Site de cuisine responsif pour recenser les recettes de ma mère. Recueil de ses besoins, maquettage, développement et production.',
         technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Postegre SQL', 'Supabase'],
         githubLink: 'https://github.com/stephantoine/site-cuisine',
         demoLink: '',
