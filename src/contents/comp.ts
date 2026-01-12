@@ -65,7 +65,7 @@ export const skills: Comp[] = [
                     'et une sensibilité à la qualité, la sécurité et la cohérence des informations stockées',
                     'Grâce à cette compétence, j\'ai acquis une vision complète du cycle de vie de la donnée, depuis sa conception jusqu\'à son exploitation, contribuant ainsi à un meilleur pilotage et à une prise de décision éclairée au sein d’un projet ou d’une entreprise.'
                 ],
-        projects: ['SAE 5-6', 'SAE 3-4', 'SAE 2.04'],
+        projects: ['SAE 5-6', 'Analyse decisionnelle', 'SAE 3-4', 'SAE 2.04'],
         order: 1,
         color: 'rgba(5, 150, 105, 0.25)'
     },
