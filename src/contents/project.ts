@@ -126,7 +126,7 @@ export const projects: Project[] = [
         handle: 'SAE 1.02',
         type: 'Universitaire',
         description: 'Création d\'un jeu de sudoku dans le terminal, puis comparaison de différents algorithmes de résolution du sudoku, avec des difficultés de plus en plus élevés.',
-        technologies: ['C'],
+        technologies: ['C', 'Doxygen'],
         githubLink: 'https://github.com/stephantoine/S2.02-cavalier',
         demoLink: '',
         image: '/projects/reso_sudoku.png',

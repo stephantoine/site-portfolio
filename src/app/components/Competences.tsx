@@ -17,7 +17,7 @@ const Competences = () => {
       <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 text-center tracking-tight">
         Principales compétences développées
       </h2>
-      <p className="text-l sm:text-xl mb-6 sm:mb-8 text-center text-secondary">Lors de ma dernière année, je me spécialise en Data & IA. Je développe les trois compétences ci dessous parmis les six du BUT</p>
+      <p className="text-l sm:text-xl mb-6 sm:mb-8 text-center text-secondary">Lors de ma dernière année, je me spécialise en Data & IA. Je développe principalement les trois compétences ci-dessous parmis les six du BUT.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 items-stretch">
         {topSkills.map((skill, index) => {
           const link = `/competences/competence-${skill.number}`;
