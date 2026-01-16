@@ -14,7 +14,7 @@ export const skills: Comp[] = [
                     'le choix des technologies adaptées, selon le contexte et les objectifs du projet',
                     'Ces réalisations m\'ont également permis d\'acquérir une méthode de travail rigoureuse, du prototypage jusqu’à l\'intégration et aux tests, tout en respectant les bonnes pratiques du développement logiciel.'
                 ],
-        projects: ['SAE 2.01', 'SAE 3-4', 'Projet JS'],
+        projects: ['SAE 2.01', 'SAE 3-4', 'Projet JS', 'SAE 5-6'],
         order: 4,
         color: 'rgba(219, 39, 119, 0.25)'
     },

@@ -13,9 +13,11 @@ const Projects = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
                 projects.map((project) => (
-                    <article 
-                    key={project.title}
-                    className='bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 '>
+                    
+                    <article
+                        key={project.title}
+                        className='bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 '>
+                        <Link key={project.link} href={`/projects/${project.link}`}>
                         <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
                             <Image
                             src={project.image}
@@ -27,8 +29,9 @@ const Projects = () => {
                         </div>
 
                         <h3 className='text-xl font-semibold mb-2 transition-colors'>{project.title}</h3>
+                        </Link>
                         <p className='text-gray-800 dark:text-gray-300 mb-2'>{project.type}</p>
-                        <p className='text-gray-600 dark:text-gray-400 mb-4'>{project.description}</p>
+                        <p className='text-gray-600 dark:text-gray-400 mb-4'>{project.resume}</p>
                         
                         <div className='flex flex-wrap gap-2 mb-4'>
                             {
@@ -41,21 +44,20 @@ const Projects = () => {
                         </div>
 
                     <div className="flex gap-4 mt-2">
-                            {project.githubLink != '' && (
-                                <Link href={project.githubLink} target="_blank" className="flex items-center gap-2 text-secondary hover:text-primary/80 transition-colors" >
-                                    <FaGithub className="w-4 h-4" />
-                                    <span>Code</span>
-                                </Link>
-                            )}
+                        {project.githubLink != '' && (
+                            <Link href={project.githubLink} target="_blank" className="flex items-center gap-2 text-secondary hover:text-primary/80 transition-colors" >
+                                <FaGithub className="w-4 h-4" />
+                                <span>Code</span>
+                            </Link>
+                        )}
 
-                            {project.demoLink != '' && (
-                                <Link href={project.demoLink} target="_blank" className="flex items-center gap-2 text-secondary hover:text-primary/80 transition-colors">
-                                    <FaExternalLinkAlt className="w-4 h-4" />
-                                    <span>Démo</span>
-                                </Link>
-                            )}
-                        </div>
-
+                        {project.demoLink != '' && (
+                            <Link href={project.demoLink} target="_blank" className="flex items-center gap-2 text-secondary hover:text-primary/80 transition-colors">
+                                <FaExternalLinkAlt className="w-4 h-4" />
+                                <span>Démo</span>
+                            </Link>
+                        )}
+                    </div>
                     </article>
                 ))
             }</div>

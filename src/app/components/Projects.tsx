@@ -23,22 +23,24 @@ const Projects = () => {
             key={project.title}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 transition-all duration-300"
           >
-            <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
+            <Link href={`/projects/${project.link}`}>
+              <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
               />
             </div>
 
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            </Link>
             <p className="text-gray-800 dark:text-gray-300 mb-2">
               {project.type}
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              {project.description}
+              {project.resume}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
