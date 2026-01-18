@@ -6,7 +6,7 @@ export const projects: Project[] = [
         handle: 'SAE 5-6',
         type: 'Universitaire',
         resume: 'Projet en cours ! Création d\'un site de recommandation de musiques.',
-        description: 'Projet en cours ! Création d\'un site de recommandation de musiques. Équipe de 8 étudiants. Recueil de données, analyses IA sur des habitudes musicales, création de base, création de systèmes de recommandation, API, site et sécurisation du site.',
+        description: 'L\'objectif final de ce projet est de réaliser un site de recommandation de musiques. Nous sommes en équipe de 8 étudiants. Pour mener à bien ce projets nous devons effectuer plusieurs étapes. La première consiste à recueillir des données utilisateurs sur des habitudes musicales et sur un grand nombre de musiques. Par la suite nous devons les nettoyer et les traiter afin d\'effectuer des analyses (avec techniques IA) pour relever des informations intéressantes et qu\'il faudra prendre en compte pour la suite. Après nous avons créé une base de données afin d\'établir des liens entre les données utilisateurs et les données des musiques. Ensuite nous avons créé des systèmes de recommandation grâce aux informations que nous avons pu retenir suite à la partie d\'analyse. Enfin nous devons développer une API et un site sécurisé.',
         technologies: ['Python', 'Pandas & Matplotlib & Numpy', 'Postegre SQL', 'JS', 'HTML/CSS', 'PHP'],
         githubLink: 'https://github.com/IUT-InTheEnd/analyse',
         demoLink: '',
@@ -15,6 +15,7 @@ export const projects: Project[] = [
           '/projects/sae5/1.png',
           '/projects/sae5/2.png',
           '/projects/sae5/3.png',
+          '/projects/sae5/4.png'
         ],
         link: 'site-recomusique'
       },
@@ -23,7 +24,7 @@ export const projects: Project[] = [
         handle: 'SAE 3-4',
         type: 'Universitaire',
         resume: 'Site web dynamique et responsif d\'avis et de conseils touristiques en Côtes d\'armor.',
-        description: 'L\'objectif final est de réaliser un site web dynamique et responsif d\'avis et de conseils touristiques en Côtes d\'armor. Le projet a été réalisé en équipe de 7 étudiants et géré en Agile Scrum.\nVoici plusieurs fonctionnalités réalisées : Création d\'une API, création d\'un framework personnalisé, authentification, facturation, notifications, carte et filtres, messagerie',
+        description: 'L\'objectif final est de réaliser un site web dynamique et responsif d\'avis et de conseils touristiques en Côtes d\'armor. Le projet a été réalisé en équipe de 7 étudiants et géré en Agile Scrum et nous avons décidé de créer un framework personnalisé. Le principe du site est que des professionnels vont publier des offres touristiques (visites, restauration, activités...) pour des visiteurs qui pourront consulter ces offres pour trouver des informations ou laisser des avis.Voici plusieurs fonctionnalités réalisées : Création d\'une API, gestion de l\'authentification, gestion de la facturation, gestion des notifications, carte interactive, tris et filtres, messagerie...',
         technologies: ['PHP', 'Tailwind CSS', 'JS', 'PostegreSQL'],
         githubLink: 'https://github.com/stephantoine/A7-PACT',
         demoLink: '',
@@ -48,7 +49,7 @@ export const projects: Project[] = [
         handle: 'Site de cuisine',
         type: 'Personnel',
         resume: 'Projet en cours ! Site de cuisine pour recenser les recettes de ma mère.',
-        description: 'Projet en cours ! Site de cuisine responsif pour recenser les recettes de ma mère. Recueil de ses besoins, maquettage, développement et production.',
+        description: 'Ce site est en cours de développement. Le principe est de créer un site de cuisine pour le recettes de ma mère. Pour le créer je passe par plusieurs étapes : d\'abord le recueil de ses besoins, ensuite le maquettage, et enfin l\'étape à laquelle je me trouve : le développement.',
         technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Postegre SQL', 'Supabase'],
         githubLink: 'https://github.com/stephantoine/site-cuisine',
         demoLink: '',
@@ -65,7 +66,7 @@ export const projects: Project[] = [
         handle: 'Analyse decisionnelle',
         type: 'Universitaire',
         resume: 'Outil d\'analyse décisionnelle sur l\'équité entre les différentes disciplines des jeux olympiques.',
-        description: 'Outil d\'analyse décisionnelle sur l\'équité entre les différentes disciplines des jeux olympiques.',
+        description: 'L\'objectif principal de ce projet est de réaliser un outil d\'analyse décisionnelle sur une problématique. Pour cela nous étions en équipe de 2. Nous avons choisi de répondre à une problématique qui nous intéressait : comment améliorer l\'équité entre les différentes disciplines des jeux olympiques ?. Nous avons un modèle en python assez simple qui réalise une analyse sur des données récoltés dans des dataset sur les JO de 1896 à 2016.',
         technologies: ['Python', 'Streamlit', 'Pandas & Matplotlib & Numpy'],
         githubLink: 'https://github.com/stephantoine/R5C.06_analyse_decisionnelle',
         demoLink: '',
@@ -77,8 +78,8 @@ export const projects: Project[] = [
         title: 'Site portfolio',
         handle: 'portfolio',
         type: 'Personnel',
-        resume: 'Site portfolio pour exposer mes projets et les compétences développées.',
-        description: 'Site portfolio (celui sur lequel vous vous trouvez actuellement), pour exposer les différentes compétences développées lors de mon BUT informatique, ainsi que les différents projets que j\'ai pu réaliser. Premier site réalisé avec Next.JS',
+        resume: 'Site portfolio (celui sur lequel vous vous trouvez actuellement)',
+        description: 'Site portfolio pour exposer les différentes compétences développées lors de mon BUT informatique, ainsi que les différents projets que j\'ai pu réaliser. Premier site réalisé avec Next.JS.',
         technologies: ['Next JS', 'React', 'Tailwind', 'TypeScript'],
         githubLink: 'https://github.com/stephantoine/portfolio',
         demoLink: '',
@@ -91,12 +92,17 @@ export const projects: Project[] = [
         handle: 'Site gendarmerie',
         type: 'Professionnel',
         resume : 'Site intranet d\'accueil pour le groupement de gendarmerie des Côtes d\'Armor.', 
-        description: 'Dans le cadre d\'un stage j\'ai réalisé un site intranet d\'accueil pour la gendarmerie. En autonomie, j\'ai développé la page principale et des modules de communciation et de réservation de matériel. Par la suite j\ai rédigé des documentations utilisateur et technique.  ',
+        description: 'Dans le cadre d\'un stage j\'ai réalisé un site intranet d\'accueil pour la gendarmerie. En autonomie, j\'ai développé la page principale et des modules de communciation et de réservation de matériel. Par la suite j\'ai rédigé des documentations utilisateur et technique.',
         technologies: ['Drupal', 'PHP', 'Boostrap 4', 'HTML', 'JS'],
         githubLink: '',
         demoLink: '',
         image: '/projects/ggd.png',
-        images: ['/projects/ggd.png'],
+        images: [
+          '/projects/ggd/1.png',
+          '/projects/ggd/2.png',
+          '/projects/ggd/3.png',
+          '/projects/ggd/4.png'
+        ],
         link: 'site-gendarmerie'
       },
       {
@@ -104,7 +110,7 @@ export const projects: Project[] = [
         handle: 'Projet JS',
         type: 'Universitaire',
         resume: 'Site de recherche sur des données de pays.',
-        description: 'Site de recherche sur les données des pays. Filtrage, recherche et tri sur les données, avec pagination. Manipulation de json avec JavaScript et création de classes pour manipuler les données.',
+        description: 'Mini projet en javascript. Tris, filtrage et recherche sur les données, avec pagination. Manipulation de json avec JavaScript et création de classes pour manipuler les données.',
         technologies: ['JS', 'HTML / CSS'],
         githubLink: 'https://github.com/stephantoine/JS-project',
         demoLink: '',
@@ -117,26 +123,26 @@ export const projects: Project[] = [
         handle: 'SAE 2.04',
         type: 'Universitaire',
         resume: 'Création d\'une base sur les collèges de France.',
-        description: 'Création d\'une base sur les collèges de France. Projet réalisé en binôme. Nettoyage des données et peuplement de cette base. Analyse statistique des données par la suite',
+        description: 'Réalisation d\'une analyse sur des données de collèges. Projet réalisé en binôme. Conception et développement d\'une base de données. Nettoyage des données et peuplement de cette base. Analyse statistique des données par la suite',
         technologies: ['Postegre SQL', 'Python'],
         githubLink: 'https://github.com/stephantoine/S2.04-base',
         demoLink: '',
         image: '/projects/base.png',
         images: ['/projects/base.png'],
-        link: 'site-base'
+        link: 'base-college'
       },
       {
         title: 'Application de gestion',
         handle: 'SAE 2.01',
         type: 'Universitaire',
         resume: 'Application de gestion des réservation de spectacle.',
-        description: 'Application pour modifier les réservation d\'un spectacle et visualiser en direct les places réservées. Équipe de 3 étudiants avec gestion de projet en Gantt. Création de la maquette avec JavaFx et partie fonctionnelle en java en suivant un modèle MVC',
+        description: 'L\'objectif de ce projet est de réaliser une partie d\'application de gestion de spectacles. Avec mon groupe composé de 3 étudiants, nous avons réalisé la partie de modification des réservations et de visualisation en direct des places (places occupées, libres et celles en cours de modification). Gestion de projet en Gantt. Création de la maquette avec JavaFx et partie fonctionnelle en java en suivant un modèle MVC.',
         technologies: ['Java', 'JavaFx'],
         githubLink: 'https://github.com/stephantoine/appli-spectacle',
         demoLink: '',
         image: '/projects/spectacle.png',
         images: ['/projects/spectacle.png'],
-        link: 'site-spectacle'
+        link: 'appli-spectacle'
       },
       // {
       //   title: 'Site de gestion de tâches',
@@ -153,7 +159,7 @@ export const projects: Project[] = [
         handle: 'Ancien portfolio',
         type: 'Personnel',
         resume: 'Ancien site porfolio simple en vanilla.',
-        description: 'Site portfolio simple en vanilla pour exposer mes projets et me présenter.',
+        description: 'Site portfolio simple en vanilla réalisé en première année de BUT pour exposer mes projets et me présenter.',
         technologies: ['HTML', 'CSS', 'JS'],
         githubLink: '',
         demoLink: '',
@@ -166,26 +172,26 @@ export const projects: Project[] = [
         handle: 'SAE 1.03',
         type: 'Universitaire',
         resume: 'Algorithme de génération automatique de documentation.',
-        description: 'Réalisation d\'un algorithme de génération automatique de documentation pdf stylisées en HTML / CSS à partir de codes sources en C dans un environnement dockerisé',
+        description: 'Réalisation d\'un algorithme de génération automatique de documentation pdf stylisées en HTML / CSS à partir de codes sources en C dans un environnement dockerisé. En équipe de 5 étudiants.',
         technologies: ['HTML', 'CSS', 'Bash', 'PHP', 'Docker'],
         githubLink: 'https://github.com/stephantoine/gen-doc',
         demoLink: '',
         image: '/projects/s1.03.png',
         images: ['/projects/s1.03.png'],
-        link: 'site-gen-doc'
+        link: 'gen-doc'
       },
       {
         title: 'Organisation d\'un évènement de team-building',
         handle: 'SAE 2.06',
         type: 'Universitaire',
-        resume: 'Simulation d\'un évènement de team-building.',
-        description: 'Simulation d\'un évènement de team-building pour une entreprise, création de flyer, de film événementiel pour la com de l\'entreprise.',
+        resume: 'Préparation d\'un évènement de team-building.',
+        description: 'Simulation d\'un évènement de team-building pour une entreprise. En se faisant passer pour l\'équipe de communication nous avons créé des flyers et un film événementiel pour présenter notre projet à l\'entreprise.',
         technologies: ['Canva', 'DaVinci Resolve'],
         githubLink: '',
         demoLink: '',
         image: '/projects/film.png',
         images: ['/projects/film.png'],
-        link: 'site-film'
+        link: 'film'
       },
       {
         title: 'Algorithmes de résolution de sudoku',
@@ -198,7 +204,6 @@ export const projects: Project[] = [
         demoLink: '',
         image: '/projects/reso_sudoku.png',
         images: ['/projects/reso_sudoku.png'],
-        link: 'site-sudoku'
-      }
-      
+        link: 'sudoku'
+      },
   ];
