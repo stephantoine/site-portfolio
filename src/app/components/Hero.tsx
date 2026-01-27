@@ -10,12 +10,14 @@ const Hero = () => {
   return (
     <section className='py-10 2xl:py-32 container max-w-7xl mx-auto px-4'>
         <div className='max-w-3xl mx-auto text-center'>
+          <Link href="/perso">
             <motion.div
             {...scaleIn}
             transition={{ delay: 0.2}}
             className='flex flex-col items-center mb-4'>
                 <Image src="/profile.jpg" alt='image de profile' width={100} height={100} className='rounded-full mb-4 w-32 h-32 object-cover ring-2 ring-primary'></Image>
             </motion.div>
+          </Link>
            
             <motion.h1 
             {...fadeInUp}
